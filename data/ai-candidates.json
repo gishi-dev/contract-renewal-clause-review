@@ -1,0 +1,267 @@
+{
+  "table": [
+    {
+      "contract": "A",
+      "category": "一致",
+      "reason": "管理表の通知2027-01-30は満了2027-03-31より前で、書面到達と根拠の欄も埋まっている。管理表の中には異常がない。",
+      "ambiguous": false,
+      "options": []
+    },
+    {
+      "contract": "B",
+      "category": "順序の異常",
+      "reason": "管理表の満了2027-05-31より通知2027-06-30が後にある。条項がないため正しい値や取り違えは特定できない。",
+      "ambiguous": false,
+      "options": []
+    },
+    {
+      "contract": "C",
+      "category": "異常なし",
+      "reason": "管理表では2027-08-01が満了2027-09-30より前で、方法も書面到達と埋まっている。管理表だけではM1第1条の未反映を特定できない。",
+      "ambiguous": false,
+      "options": []
+    },
+    {
+      "contract": "D",
+      "category": "通知方法の欠落",
+      "reason": "管理表の通知2027-11-16は満了2027-12-31より前だが、通知方法の欄が空いている。",
+      "ambiguous": false,
+      "options": []
+    },
+    {
+      "contract": "E",
+      "category": "判断材料不足",
+      "reason": "管理表のM2（適用未確認）の注記から確認待ちとする。本文と覚書の条件は管理表だけでは抽出できない。",
+      "ambiguous": true,
+      "options": []
+    },
+    {
+      "contract": "F",
+      "category": "一致",
+      "reason": "管理表の通知2026-12-31は満了2027-01-31より前で、書面到達と第15条が記録されている。管理表だけでは更新期間を確認できない。",
+      "ambiguous": false,
+      "options": []
+    }
+  ],
+  "clauses": [
+    {
+      "contract": "A",
+      "category": "一致",
+      "reason": "第10条の満了2027-03-31から60暦日前は2027-01-30で、管理表と一致する。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-03-31",
+          "days": 60,
+          "method": "書面到達",
+          "renewal": "1年",
+          "refs": [
+            "第10条"
+          ]
+        }
+      ]
+    },
+    {
+      "contract": "B",
+      "category": "取り違え",
+      "reason": "第11条の満了は2027-06-30。管理表の満了2027-05-31と通知2027-06-30は、満了と通知の取り違え候補。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-06-30",
+          "days": 30,
+          "method": "書面到達",
+          "renewal": "1年",
+          "refs": [
+            "第11条"
+          ]
+        }
+      ]
+    },
+    {
+      "contract": "C",
+      "category": "覚書の未反映",
+      "reason": "第12条に優先するM1第1条は30暦日前・電子メール到達。管理表の2027-08-01・書面到達には変更が反映されていない。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-09-30",
+          "days": 30,
+          "method": "電子メール到達",
+          "renewal": "1年",
+          "refs": [
+            "第12条",
+            "M1第1条"
+          ]
+        }
+      ]
+    },
+    {
+      "contract": "D",
+      "category": "通知方法の欠落",
+      "reason": "第13条の45暦日前は2027-11-16で日付差は0日だが、電子メール到達が管理表で欠落している。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-12-31",
+          "days": 45,
+          "method": "電子メール到達",
+          "renewal": "1年",
+          "refs": [
+            "第13条"
+          ]
+        }
+      ]
+    },
+    {
+      "contract": "E",
+      "category": "判断材料不足",
+      "reason": "M2第1条は別途合意した対象取引だけに適用する。別途合意書がなく、本文60暦日前とM2の30暦日前のどちらかに決められない。",
+      "ambiguous": true,
+      "options": [
+        {
+          "end": "2027-08-31",
+          "days": 60,
+          "method": "書面到達",
+          "renewal": "1年",
+          "refs": [
+            "第14条"
+          ]
+        },
+        {
+          "end": "2027-08-31",
+          "days": 30,
+          "method": "電子メール到達",
+          "renewal": "1年",
+          "refs": [
+            "第14条",
+            "M2第1条"
+          ]
+        }
+      ]
+    },
+    {
+      "contract": "F",
+      "category": "一致",
+      "reason": "第15条は満了2027-01-31・31暦日前・書面到達で管理表と一致。更新期間は6か月である。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-01-31",
+          "days": 31,
+          "method": "書面到達",
+          "renewal": "6か月",
+          "refs": [
+            "第15条"
+          ]
+        }
+      ]
+    }
+  ],
+  "teaching": [
+    {
+      "contract": "A",
+      "category": "一致",
+      "reason": "第10条の満了2027-03-31から60暦日前は2027-01-30で、管理表と一致する。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-03-31",
+          "days": 60,
+          "method": "書面到達",
+          "renewal": "1年",
+          "refs": [
+            "第10条"
+          ]
+        }
+      ]
+    },
+    {
+      "contract": "B",
+      "category": "取り違え",
+      "reason": "第11条の満了は2027-06-30。管理表の満了2027-05-31と通知2027-06-30は、満了と通知の取り違え候補。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-06-30",
+          "days": 30,
+          "method": "書面到達",
+          "renewal": "1年",
+          "refs": [
+            "第11条"
+          ]
+        }
+      ]
+    },
+    {
+      "contract": "C",
+      "category": "一致",
+      "reason": "通知方法だけM1の電子メール到達に変え、60暦日前の2027-08-01を残して一致とした候補。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-09-30",
+          "days": 60,
+          "method": "電子メール到達",
+          "renewal": "1年",
+          "refs": [
+            "第12条",
+            "M1第1条"
+          ]
+        }
+      ]
+    },
+    {
+      "contract": "D",
+      "category": "一致",
+      "reason": "通知2027-11-16の日付差0日だけを見て、方法の空欄を見落として一致とした候補。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-12-31",
+          "days": 45,
+          "method": "電子メール到達",
+          "renewal": "1年",
+          "refs": [
+            "第13条"
+          ]
+        }
+      ]
+    },
+    {
+      "contract": "E",
+      "category": "覚書の未反映",
+      "reason": "M2を新しい覚書という理由だけで契約E全体へ適用し、2027-08-01・電子メール到達に一本化した候補。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-08-31",
+          "days": 30,
+          "method": "電子メール到達",
+          "renewal": "1年",
+          "refs": [
+            "第14条",
+            "M2第1条"
+          ]
+        }
+      ]
+    },
+    {
+      "contract": "F",
+      "category": "一致",
+      "reason": "第15条の更新期間を6か月から1年に置き換えた候補。",
+      "ambiguous": false,
+      "options": [
+        {
+          "end": "2027-01-31",
+          "days": 31,
+          "method": "書面到達",
+          "renewal": "1年",
+          "refs": [
+            "第15条"
+          ]
+        }
+      ]
+    }
+  ]
+}
